@@ -1,37 +1,65 @@
 <! DOCTYPE html>
 <html>
 <head>
-	<title> Google</title>
+	<title>Youtube</title>
 	<link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
-	<div id="template">
-	<header>
-		<div id="fleft">
-			<ul>
-				<li>NAV</li>
-				<li>LOGO</li>
-			</ul>
+	<div>
+	<header class="flex-container1">
+		<div class="fleft">
+			<!-- left hand side of hte navigation at the top (menu and youtube logo)-->
+			<div class="icon-bar">
+				<a href="#"><span class="fa1 fa2 menu"></span></a>
+				<a href="#"><span class="fa1 youtube"></span></a>
+			</div>
 		</div>
 		<div id="fcenter">
-			<p>SEARCH</p>
+			<input class="search" type="search" placeholder="Search">
 		</div>
 		<div id="fright">
-			<ul>
-				<li>CAM</li>
-				<li>SQUARE</li>
-				<li>share</li>
-				<li>BELL</li>
-				<li>FACE</li>
-			</ul>
+			<!-- right hand side of the navigation of ht emain youtube page-->
+			<div class="icon-bar">
+				<a href="#"><span class="fa1 fa2 create"></span></a>
+				<a href="#"><span class="fa1 fa2 apps"></span></a>
+				<a href="#"><span class="fa1 fa2 share"></span></a>
+				<a href="#"><span class="fa1 fa2 notifications"></span></a>
+				<a href="#"><span class="fa1 fa2 profile"></span></a>
+				</div>
 		</div>
 <!-- includes nav tile, youtube logo LHS / search centre but left justified / google icons on RHS -->
 <!-- 100% width -->
 	</header>
 
-	<section>
+	<section id="video">
+			<iframe width="910" height="490"  src="https://www.youtube.com/embed/74QdmDtMK1Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<p id="vidtitle">The Katering Show S2 - The Cook and the Kates</p>
+			<div class="flex-container1 icon-bar">
+				<div class="fleft">
+					<p>192,376 views</p>
+				</div>
+				<div class="fright">
+					<a href="#"><span class="fa1 fa2 vup"></span><span>243</span></a>
+					<a href="#"><span class="fa1 fa2 vdown"></span><span>20</span></a>
+					<a href="#"><span class="fa1 fa2 share2"></span><span>SHARE</span></a>
+					<a href="#"><span class="fa1 fa2 menu"></span><span>SAVE</span> </a>
+					<a href="#"><span class="fa1 fa2 options"></span></a>
+				</div>
+			</div>
+			<div class="flex-container1" id="description">
+				<div class="flex-container1">
+					<a href="#"><span class="fa1 fa2 profile"></span></a>
+				</div>
+				<div class="flex-container2">
+					<h3>
+						Tim Minchin
+					</h3>
+					<p>Published on Dec 31, 2018</p>
+				</div>
+
+			</div>
 <!-- section takes up about 75% of the centre width -->
 <!-- video is actually the top of the section -->
 		<article>

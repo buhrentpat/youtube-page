@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: 10 10 10;
+}
 #template{
     background-image: url("../template.jpg");
     background-size: 100% auto;
@@ -12,19 +16,42 @@
 header {
     border: 5px;
     width: 100%;
-    height: 30px;
+    height: 56px;
 }
 
-#fleft{
-    float: left;
+.flex-container1{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.flex-container2{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.fleft{
+    width: 195px;
+    height: 56px;
+    padding-left: 15px;
 }
 
 #fright{
-    float: right;
+    padding-right: 35px;
+    height: 56px;
 }
 #fcenter{
-    margin: auto;
-    width: 50%;
+    padding-top: 20px;
+    width: 45%;
+    height: 56px;
+}
+input.search{
+    width: 540px;
+
 }
 
 ul {
@@ -36,4 +63,75 @@ li {
     display: inline;
     padding: 8px;
     font-size: 0.8em;
+}
+/*.icon-bar {
+    width: 100px;
+} */
+.icon-bar a:link, a:visited, a:hover, a:active  {
+    float: left;
+    display:block;
+    text-align: center;
+    padding: 16px 10px;
+    text-decoration: none;
+
+}
+.fa1{
+    display: inline-block;
+    padding: 2px;
+    height: 24px;
+    background-repeat: no-repeat;
+}
+.fa2{
+    background-size: 24px 24px;
+    width: 24px;
+}
+span.menu{
+    background-image: url('../material-design-icons/navigation/1x_web/ic_menu_black_24dp.png');
+}
+span.youtube{
+    background-image: url('../yt_logo_rgb_light.png');
+    background-size: 107px 24px;
+    width: 107px;
+}
+span.create{
+    background-image: url('../material-design-icons/av/1x_web/ic_video_call_black_24dp.png'); 
+}
+span.apps{
+    background-image: url('../material-design-icons/navigation/1x_web/ic_apps_black_24dp.png');
+}
+span.share{
+    background-image: url('../material-design-icons/navigation/1x_web/ic_apps_black_24dp.png');
+}
+span.notifications{
+    background-image: url('../material-design-icons/social/1x_web/ic_notifications_black_24dp.png'); 
+}
+span.profile{
+    background-image: url('../profile.jpg');
+}
+
+/* video section */
+
+#video {
+    width: 60%;
+    margin-left: 75px;
+    margin-top: 25px;
+    
+}
+#vidtitle{
+    font-size: 1.25em;
+}
+span.vup{
+    background-image: url('../material-design-icons/action/1x_web/ic_thumb_up_black_24dp.png')
+}
+span.vdown{
+    background-image: url('../material-design-icons/action/1x_web/ic_thumb_down_black_24dp.png')
+}
+span.share2{
+    background-image:url('../material-design-icons/content/1x_web/ic_reply_black_24dp.png')
+}
+span.save {
+    background-image: url('')
+}
+span.options{
+    background-image: url('../material-design-icons/navigation/1x_web/ic_more_horiz_black_24dp.png')
 }
